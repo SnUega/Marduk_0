@@ -1,0 +1,922 @@
+﻿Log file open, 06/18/17 17:50:59
+LogInit:Display: Running engine for game: Marduk0
+LogPlatformFile: Not using cached read wrapper
+LogInit:Display: RandInit(1879991197) SRandInit(1879991197).
+LogTaskGraph: Started task graph with 5 named threads and 8 total threads with 1 sets of task threads.
+LogStats: Stats thread started at 0.216801
+LogInit: Using libcurl 7.47.1
+LogInit:  - built for x86_64-pc-win32
+LogInit:  - supports SSL with OpenSSL/1.0.2g
+LogInit:  - supports HTTP deflate (compression) using libz 1.2.8
+LogInit:  - other features:
+LogInit:      CURL_VERSION_SSL
+LogInit:      CURL_VERSION_LIBZ
+LogInit:      CURL_VERSION_IPV6
+LogInit:      CURL_VERSION_ASYNCHDNS
+LogInit:      CURL_VERSION_LARGEFILE
+LogInit:      CURL_VERSION_IDN
+LogInit:  CurlRequestOptions (configurable via config and command line):
+LogInit:  - bVerifyPeer = false  - Libcurl will NOT verify peer certificate
+LogInit:  - bUseHttpProxy = false  - Libcurl will NOT use HTTP proxy
+LogInit:  - bDontReuseConnections = false  - Libcurl will reuse connections
+LogInit:  - CertBundlePath = nullptr  - Libcurl will use whatever was configured at build time.
+LogInit: Build: ++UE4+Release-4.16-CL-3466753
+LogInit: Engine Version: 4.16.1-3466753+++UE4+Release-4.16
+LogInit: Compatible Engine Version: 4.16.0-3452394+++UE4+Release-4.16
+LogInit: Net CL: 3452394
+LogDevObjectVersion: Number of dev versions registered: 16
+LogDevObjectVersion:   Dev-Blueprints (B0D832E4-1F89-4F0D-ACCF-7EB736FD4AA2): 9
+LogDevObjectVersion:   Dev-Build (E1C64328-A22C-4D53-A36C-8E866417BD8C): 0
+LogDevObjectVersion:   Dev-Core (375EC13C-06E4-48FB-B500-84F0262A717E): 2
+LogDevObjectVersion:   Dev-Editor (E4B068ED-F494-42E9-A231-DA0B2E46BB41): 17
+LogDevObjectVersion:   Dev-Framework (CFFC743F-43B0-4480-9391-14DF171D2073): 23
+LogDevObjectVersion:   Dev-Mobile (B02B49B5-BB20-44E9-A304-32B752E40360): 0
+LogDevObjectVersion:   Dev-Networking (A4E4105C-59A1-49B5-A7C5-40C4547EDFEE): 0
+LogDevObjectVersion:   Dev-Online (39C831C9-5AE6-47DC-9A44-9C173E1C8E7C): 0
+LogDevObjectVersion:   Dev-Physics (78F01B33-EBEA-4F98-B9B4-84EACCB95AA2): 0
+LogDevObjectVersion:   Dev-Platform (6631380F-2D4D-43E0-8009-CF276956A95A): 0
+LogDevObjectVersion:   Dev-Rendering (12F88B9F-8875-4AFC-A67C-D90C383ABD29): 15
+LogDevObjectVersion:   Dev-Sequencer (7B5AE74C-D270-4C10-A958-57980B212A5A): 4
+LogDevObjectVersion:   Dev-VR (D7296918-1DD6-4BDD-9DE2-64A83CC13884): 0
+LogDevObjectVersion:   Dev-LoadTimes (C2A15278-BFE7-4AFE-6C17-90FF531DF755): 1
+LogDevObjectVersion:   Private-Geometry (6EACA3D4-40EC-4CC1-B786-8BED09428FC5): 1
+LogDevObjectVersion:   Dev-AnimPhys (29E575DD-E0A3-4627-9D10-D276232CDCEA): 3
+LogInit: Compiled (64-bit): May 31 2017 02:03:30
+LogInit: Compiled with Visual C++: 19.00.24215.01
+LogInit: Build Configuration: Development
+LogInit: Branch Name: ++UE4+Release-4.16
+LogInit: Command line: -EpicPortal 
+LogInit: Base directory: D:/Workspace/Programs/UE_4.16/Engine/Binaries/Win64/
+LogInit: Installed Engine Build: 1
+LogInit: Presizing for max 8388607 objects, including 0 objects not considered by GC, pre-allocating 0 bytes for permanent pool.
+LogInit: Object subsystem initialized
+[2017.06.18-14.51.01:103][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.18-14.51.01:103][  0]LogInit: Applying CVar settings loaded from the selected device profile: [Windows]
+[2017.06.18-14.51.01:137][  0]LogInit: Computer: SKAIA
+[2017.06.18-14.51.01:137][  0]LogInit: User: SyfeNora
+[2017.06.18-14.51.01:137][  0]LogInit: CPU Page size=4096, Cores=4
+[2017.06.18-14.51.01:137][  0]LogInit: High frequency timer resolution =1.754522 MHz
+[2017.06.18-14.51.01:138][  0]LogMemory: Memory total: Physical=6.9GB (7GB approx)
+[2017.06.18-14.51.01:138][  0]LogMemory: Platform Memory Stats for Windows
+[2017.06.18-14.51.01:138][  0]LogMemory: Process Physical Memory: 270.81 MB used, 270.81 MB peak
+[2017.06.18-14.51.01:138][  0]LogMemory: Process Virtual Memory: 266.47 MB used, 266.47 MB peak
+[2017.06.18-14.51.01:138][  0]LogMemory: Physical Memory: 2135.68 MB used,  4956.98 MB free, 7092.66 MB total
+[2017.06.18-14.51.01:138][  0]LogMemory: Virtual Memory: 622.84 MB used,  4956.98 MB free, 134217728.00 MB total
+[2017.06.18-14.51.01:418][  0]LogInit: Using OS detected language (ru-RU).
+[2017.06.18-14.51.01:418][  0]LogInit: Using OS detected locale (ru-RU).
+[2017.06.18-14.51.01:427][  0]LogTextLocalizationManager: No localization for 'ru-RU' exists, so 'en' will be used for the language.
+[2017.06.18-14.51.01:428][  0]LogTextLocalizationManager: No localization for 'ru-RU' exists, so 'en' will be used for the locale.
+[2017.06.18-14.51.04:054][  0]LogD3D11RHI: D3D11 adapters:
+[2017.06.18-14.51.04:085][  0]LogD3D11RHI:    0. 'AMD Radeon(TM) R3 Graphics' (Feature Level 11_0)
+[2017.06.18-14.51.04:085][  0]LogD3D11RHI:       1005/0/3328 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:1, VendorId:0x1002
+[2017.06.18-14.51.04:089][  0]LogD3D11RHI:    1. 'Microsoft Basic Render Driver' (Feature Level 11_0)
+[2017.06.18-14.51.04:089][  0]LogD3D11RHI:       0/0/256 MB DedicatedVideo/DedicatedSystem/SharedSystem, Outputs:0, VendorId:0x1414
+[2017.06.18-14.51.04:089][  0]LogD3D11RHI: Chosen D3D11 Adapter: 0
+[2017.06.18-14.51.04:099][  0]LogD3D11RHI: Creating new Direct3DDevice
+[2017.06.18-14.51.04:099][  0]LogD3D11RHI:     GPU DeviceId: 0x9850 (for the marketing name, search the web for "GPU Device Id")
+[2017.06.18-14.51.04:099][  0]LogWindows: EnumDisplayDevices:
+[2017.06.18-14.51.04:100][  0]LogWindows:    0. 'AMD Radeon(TM) R3 Graphics' (P:1 D:1)
+[2017.06.18-14.51.04:101][  0]LogWindows:    1. 'AMD Radeon(TM) R3 Graphics' (P:0 D:0)
+[2017.06.18-14.51.04:101][  0]LogWindows: DebugString: FoundDriverCount:2 
+[2017.06.18-14.51.04:101][  0]LogD3D11RHI:     Adapter Name: AMD Radeon(TM) R3 Graphics
+[2017.06.18-14.51.04:101][  0]LogD3D11RHI:   Driver Version: Crimson ReLive 16.12.2 (internal:21.19.407.0, unified:21.19.407.0)
+[2017.06.18-14.51.04:101][  0]LogD3D11RHI:      Driver Date: 12-23-2016
+[2017.06.18-14.51.04:101][  0]LogRHI: Texture pool is 703 MB (70% of 1005 MB)
+[2017.06.18-14.51.04:204][  0]LogD3D11RHI: Async texture creation enabled
+[2017.06.18-14.51.04:222][  0]LogD3D11RHI: GPU Timing Frequency: 100.000000 (Debug: 2 1)
+[2017.06.18-14.51.04:224][  0]LogShaderCompilers: Guid format shader working directory is 15 characters bigger than the processId version (../../../../../UEProjects/Marduk_0/Intermediate/Shaders/WorkingDirectory/4932/).
+[2017.06.18-14.51.04:224][  0]LogShaderCompilers: Cleaned the shader compiler working directory 'C:/Users/SyfeNora/AppData/Local/Temp/UnrealShaderWorkingDir/4C96758E4215B34AEF6BD6A8FF964FDF/'.
+[2017.06.18-14.51.04:224][  0]LogShaderCompilers:Display: Using Local Shader Compiler.
+[2017.06.18-14.51.07:996][  0]LogTemp:Display: Loaded TP AllDesktopTargetPlatform
+[2017.06.18-14.51.08:177][  0]LogTemp:Display: Loaded TP MacClientTargetPlatform
+[2017.06.18-14.51.08:354][  0]LogTemp:Display: Loaded TP MacNoEditorTargetPlatform
+[2017.06.18-14.51.08:543][  0]LogTemp:Display: Loaded TP MacServerTargetPlatform
+[2017.06.18-14.51.08:732][  0]LogTemp:Display: Loaded TP MacTargetPlatform
+[2017.06.18-14.51.08:919][  0]LogTemp:Display: Loaded TP WindowsClientTargetPlatform
+[2017.06.18-14.51.09:107][  0]LogTemp:Display: Loaded TP WindowsNoEditorTargetPlatform
+[2017.06.18-14.51.09:294][  0]LogTemp:Display: Loaded TP WindowsServerTargetPlatform
+[2017.06.18-14.51.09:457][  0]LogTemp:Display: Loaded TP WindowsTargetPlatform
+[2017.06.18-14.51.09:663][  0]LogTemp:Display: Loaded TP AndroidTargetPlatform
+[2017.06.18-14.51.09:862][  0]LogTemp:Display: Loaded TP Android_ASTCTargetPlatform
+[2017.06.18-14.51.10:038][  0]LogTemp:Display: Loaded TP Android_ATCTargetPlatform
+[2017.06.18-14.51.10:219][  0]LogTemp:Display: Loaded TP Android_DXTTargetPlatform
+[2017.06.18-14.51.10:400][  0]LogTemp:Display: Loaded TP Android_ETC1TargetPlatform
+[2017.06.18-14.51.10:578][  0]LogTemp:Display: Loaded TP Android_ETC2TargetPlatform
+[2017.06.18-14.51.10:941][  0]LogTemp:Display: Loaded TP Android_MultiTargetPlatform
+[2017.06.18-14.51.10:941][  0]LogTemp:Display: Loaded TP Android_PVRTCTargetPlatform
+[2017.06.18-14.51.11:077][  0]LogTemp:Display: Loaded TP HTML5TargetPlatform
+[2017.06.18-14.51.11:346][  0]LogTemp:Display: Loaded TP IOSTargetPlatform
+[2017.06.18-14.51.11:455][  0]LogTemp:Display: Loaded TP TVOSTargetPlatform
+[2017.06.18-14.51.11:630][  0]LogTemp:Display: Loaded TP LinuxClientTargetPlatform
+[2017.06.18-14.51.11:806][  0]LogTemp:Display: Loaded TP LinuxNoEditorTargetPlatform
+[2017.06.18-14.51.11:982][  0]LogTemp:Display: Loaded TP LinuxServerTargetPlatform
+[2017.06.18-14.51.12:165][  0]LogTemp:Display: Loaded TP LinuxTargetPlatform
+[2017.06.18-14.51.12:165][  0]LogTargetPlatformManager:Display: Building Assets For Windows
+[2017.06.18-14.51.13:850][  0]LogDerivedDataCache:Display: Max Cache Size: 512 MB
+[2017.06.18-14.51.14:212][  0]LogDerivedDataCache: Loaded boot cache 0.36s 90MB C:/Users/SyfeNora/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.06.18-14.51.14:213][  0]LogDerivedDataCache:Display: Loaded Boot cache: C:/Users/SyfeNora/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc
+[2017.06.18-14.51.14:213][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  Pak pak cache file ../../../../../UEProjects/Marduk_0/DerivedDataCache/DDC.ddp not found, will not use a pak cache.
+[2017.06.18-14.51.14:213][  0]LogDerivedDataCache: Unable to find inner node Pak for hierarchical cache Hierarchy.
+[2017.06.18-14.51.14:213][  0]LogDerivedDataCache: FDerivedDataBackendGraph:  CompressedPak pak cache file ../../../../../UEProjects/Marduk_0/DerivedDataCache/Compressed.ddp not found, will not use a pak cache.
+[2017.06.18-14.51.14:213][  0]LogDerivedDataCache: Unable to find inner node CompressedPak for hierarchical cache Hierarchy.
+[2017.06.18-14.51.14:289][  0]LogDerivedDataCache:Display: Pak cache opened for reading ../../../Engine/DerivedDataCache/Compressed.ddp.
+[2017.06.18-14.51.14:304][  0]LogDerivedDataCache: Using Local data cache path C:/Users/SyfeNora/AppData/Local/UnrealEngine/Common/DerivedDataCache: Writable
+[2017.06.18-14.51.14:343][  0]LogMaterial: Verifying Global Shaders for PCD3D_SM5
+[2017.06.18-14.51.14:344][  0]LogSlate: Using Freetype 2.6.0
+[2017.06.18-14.51.14:345][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.18-14.51.14:345][  0]LogSlate: SlateFontCache - WITH_FREETYPE: 1, WITH_HARFBUZZ: 1
+[2017.06.18-14.51.15:614][  0]LogInit: Selected Device Profile: [Windows]
+[2017.06.18-14.51.15:928][  0]LogContentStreaming: Texture pool size is 0.00 MB
+[2017.06.18-14.51.16:467][  0]LogMeshUtilities: Using QuadricMeshReduction for automatic static mesh reduction
+[2017.06.18-14.51.16:618][  0]LogSimplygon: Simplygon DLL not present - disabling.
+[2017.06.18-14.51.16:774][  0]LogMeshUtilities: Using SimplygonSwarm for distributed automatic mesh merging
+[2017.06.18-14.51.16:774][  0]LogMeshUtilities: No automatic skeletal mesh reduction module available
+[2017.06.18-14.51.16:774][  0]LogMeshUtilities: No automatic mesh merging module available
+[2017.06.18-14.51.18:672][  0]LogNetVersion: Marduk0 , NetCL: 3452394, EngineNetVer: 2, GameNetVer: 0 (Checksum: 2744008900)
+[2017.06.18-14.51.18:830][  0]LogAssetRegistry: FAssetRegistry took 0.0408 seconds to start up
+[2017.06.18-14.51.18:963][  0]LogPackageLocalizationCache: Processed 4 localized package path(s) for 1 prioritized culture(s) in 0.059016 seconds
+[2017.06.18-14.51.18:988][  0]LogUObjectArray: 34194 objects as part of root set at end of initial load.
+[2017.06.18-14.51.18:988][  0]LogUObjectAllocator: 7260424 out of 0 bytes used by permanent object pool.
+[2017.06.18-14.51.18:988][  0]LogUObjectArray: CloseDisregardForGC: 0/0 objects in disregard for GC pool
+[2017.06.18-14.51.19:205][  0]LogInit: WinSock: version 1.1 (2.2), MaxSocks=32767, MaxUdp=65467
+[2017.06.18-14.51.26:960][  0]LogTcpMessaging: Initializing TcpMessaging bridge
+[2017.06.18-14.51.27:073][  0]LogUdpMessaging: Initializing bridge on interface 0.0.0.0:0 to multicast group 230.0.0.1:6666.
+[2017.06.18-14.51.28:672][  0]LogMaterial: Uniform references updated for custom material expression Custom.
+[2017.06.18-14.51.30:031][  0]SourceControl: Info Source control is disabled
+[2017.06.18-14.51.30:222][  0]SourceControl: Info Source control is disabled
+[2017.06.18-14.51.30:378][  0]SourceControl: Info Source control is disabled
+[2017.06.18-14.51.30:532][  0]SourceControl: Info Source control is disabled
+[2017.06.18-14.51.32:801][  0]LogAndroidPermission: UAndroidPermissionCallbackProxy::GetInstance
+[2017.06.18-14.51.34:734][  0]LogEngine: Initializing Engine...
+[2017.06.18-14.51.34:737][  0]LogHMD: Failed to initialize OpenVR with code 110
+[2017.06.18-14.51.35:446][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: Construct from data asset -  0.000 s
+[2017.06.18-14.51.35:446][  0]LogStats: UGameplayTagsManager::ConstructGameplayTagTree: GameplayTagTreeChangedEvent.Broadcast -  0.000 s
+[2017.06.18-14.51.35:883][  0]LogAIModule: Creating AISystem for world Untitled
+[2017.06.18-14.51.35:901][  0]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.18-14.51.35:935][  0]LogInit: FAudioDevice initialized.
+[2017.06.18-14.51.36:091][  0]LogDerivedDataCache: Saved boot cache 0.16s 90MB C:/Users/SyfeNora/AppData/Local/UnrealEngine/4.16/DerivedDataCache/Boot.ddc.
+[2017.06.18-14.51.36:154][  0]LogInit: Texture streaming: Enabled
+[2017.06.18-14.51.36:481][  0]LogEngineSessionManager: EngineSessionManager initialized
+[2017.06.18-14.51.37:203][  0]LogInit: Transaction tracking system initialized
+[2017.06.18-14.51.38:269][  0]BlueprintLog: New page: Editor Load
+[2017.06.18-14.51.41:416][  0]LocalizationService: Info Localization service is disabled
+[2017.06.18-14.51.43:708][  0]LogConsoleResponse:Display: 
+[2017.06.18-14.51.44:183][  0]LogCook:Display: Max memory allowance for cook 16384mb min free memory 0mb
+[2017.06.18-14.51.44:184][  0]LogCook:Display: Mobile HDR setting 1
+[2017.06.18-14.51.44:368][  0]LogFileCache: Scanning file cache for directory 'D:/Workspace/UEProjects/Marduk_0/Content/' took 0.02s
+[2017.06.18-14.51.47:560][  0]SourceControl: Info Source control is disabled
+[2017.06.18-14.51.47:664][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.18-14.51.47:707][  0]LogSlate: Took 0.000624 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.06.18-14.51.52:770][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.18-14.51.52:772][  0]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.18-14.51.52:786][  0]Cmd: MAP LOAD FILE="../../../Engine/Content/Maps/Templates/Template_Default.umap" TEMPLATE=1 SHOWPROGRESS=1 FEATURELEVEL=3
+[2017.06.18-14.51.52:788][  0]LightingResults: New page: Lighting Build
+[2017.06.18-14.51.52:940][  0]MapCheck: New page: Map Check
+[2017.06.18-14.51.52:940][  0]LightingResults: New page: Lighting Build
+[2017.06.18-14.51.53:880][  0]LogAIModule: Creating AISystem for world Untitled_1
+[2017.06.18-14.51.53:882][  0]LogActorComponent: RegisterComponentWithWorld: (/Temp/Untitled_1.Untitled_1:PersistentLevel.WorldSettings_1.StaticMeshComponent0) Trying to register component with IsPendingKill() == true. Aborting.
+[2017.06.18-14.51.53:895][  0]LogEditorServer: Finished looking for orphan Actors (0.000 secs)
+[2017.06.18-14.51.53:941][  0]Cmd: MAP CHECKDEP NOCLEARLOG
+[2017.06.18-14.51.54:074][  0]MapCheck: Info Map check complete: 0 Error(s), 0 Warning(s), took 132.674ms to complete.
+[2017.06.18-14.51.54:074][  0]LogFileHelpers: Loading map 'Template_Default' took 1.288
+[2017.06.18-14.51.54:332][  0]LogStats:Warning: MetaData mismatch. Did you assign a stat to two groups? New //STATGROUP_Threads//SplashScreenThread///Thread_10c4_0///####STATCAT_Advanced#### old //STATGROUP_Threads//SplashScreenThread///Thread_139c_0///####STATCAT_Advanced####
+[2017.06.18-14.51.54:332][  0]LogCollectionManager: Loaded 0 collections in 0.004394 seconds
+[2017.06.18-14.51.54:523][  0]LogFileCache: Scanning file cache for directory 'D:/Workspace/UEProjects/Marduk_0/Saved/Collections/' took 0.01s
+[2017.06.18-14.51.54:523][  0]LogFileCache: Scanning file cache for directory 'D:/Workspace/UEProjects/Marduk_0/Content/Developers/SyfeNora/Collections/' took 0.01s
+[2017.06.18-14.51.54:523][  0]LogFileCache: Scanning file cache for directory 'D:/Workspace/UEProjects/Marduk_0/Content/Collections/' took 0.01s
+[2017.06.18-14.51.54:523][  0]LogCollectionManager: Rebuilt the GUID cache for 0 collections in 0.000005 seconds
+[2017.06.18-14.51.54:560][  0]LogContentBrowser: Native class hierarchy populated in 0.0368 seconds. Added 2329 classes and 491 folders.
+[2017.06.18-14.51.54:784][  0]LogContentBrowser: Native class hierarchy updated for 'WidgetCarousel' in 0.0017 seconds. Added 0 classes and 0 folders.
+[2017.06.18-14.51.54:906][  0]LogContentBrowser: Native class hierarchy updated for 'AddContentDialog' in 0.0018 seconds. Added 0 classes and 0 folders.
+[2017.06.18-14.51.55:063][  0]LogContentBrowser: Native class hierarchy updated for 'SceneOutliner' in 0.0019 seconds. Added 1 classes and 2 folders.
+[2017.06.18-14.51.55:198][  0]LogCrashTracker: Crashtracker disabled due to settings.
+[2017.06.18-14.51.55:216][  0]LogSlate: Took 0.000540 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Bold.ttf' (160K)
+[2017.06.18-14.51.55:224][  0]LogSlate: Took 0.000747 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/FontAwesome.ttf' (139K)
+[2017.06.18-14.51.55:545][  0]LogRenderer: Reallocating scene render targets to support 1048x612 NumSamples 1 (Frame:1).
+[2017.06.18-14.51.55:788][  0]LogUObjectGlobals:Warning: Failed to find object 'Class None.'
+[2017.06.18-14.51.55:955][  0]LogContentBrowser: Native class hierarchy updated for 'HierarchicalLODOutliner' in 0.0019 seconds. Added 1 classes and 2 folders.
+[2017.06.18-14.51.55:956][  0]LogLoad: (Engine Initialization) Total time: 59.84 seconds
+[2017.06.18-14.51.55:956][  0]LogLoad: (Engine Initialization) Total Blueprint compile time: 0.36 seconds
+[2017.06.18-14.51.55:956][  0]LogExternalProfiler: Found external profiler: VSPerf
+[2017.06.18-14.51.55:956][  0]LogExternalProfiler: Using external profiler: VSPerf
+[2017.06.18-14.51.55:974][  0]LogOcInput: OculusInput pre-init called
+[2017.06.18-14.51.55:974][  0]LogHMD: Starting GearVRController plugin
+[2017.06.18-14.51.56:000][  0]LogContentStreaming: Texture pool size now 400 MB
+[2017.06.18-14.51.56:253][  4]LogAssetRegistry: Asset discovery search completed in 37.4476 seconds
+[2017.06.18-14.51.56:260][  4]LogCollectionManager: Rebuilt the object cache for 0 collections in 0.000002 seconds (found 0 objects)
+[2017.06.18-14.51.56:260][  4]LogCollectionManager: Fixed up redirectors for 0 collections in 0.000113 seconds (updated 0 objects)
+[2017.06.18-14.51.57:071][ 18]LogSlate: Took 0.001822 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.18-14.52.00:123][112]LogSlate: Took 0.000628 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.18-14.52.15:898][454]LogSlate: Took 0.000567 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Light.ttf' (159K)
+[2017.06.18-14.52.16:758][454]LogSlate: Took 0.000471 seconds to synchronously load lazily loaded font '../../../Engine/Content/Slate/Fonts/Roboto-Regular.ttf' (155K)
+[2017.06.18-14.52.17:430][454]LogContentBrowser: Native class hierarchy updated for 'BlueprintGraph' in 0.0033 seconds. Added 112 classes and 0 folders.
+[2017.06.18-14.52.19:765][454]LogSlate: Took 0.000510 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensed.ttf' (158K)
+[2017.06.18-14.52.43:469][908]LogSlate: Took 0.000629 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-BoldCondensedItalic.ttf' (160K)
+[2017.06.18-14.54.07:309][447]BlueprintLog: New page: Compile Stats
+[2017.06.18-14.54.08:575][460]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-14.54.08:651][460]LogSavePackage: Save=45.51ms
+[2017.06.18-14.54.08:651][460]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/StatsCF58FDBA4FE6A890BD9D7A8B2828C641.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-14.54.08:660][460]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-14.54.09:725][477]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-14.54.09:764][477]LogSavePackage: Save=18.80ms
+[2017.06.18-14.54.09:764][477]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats8D08EAE94777E7DB2D2689A2B8284BDD.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-14.54.09:769][477]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-14.55.21:887][729]BlueprintLog: New page: Compile Stats
+[2017.06.18-14.55.23:006][740]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-14.55.23:044][740]LogSavePackage: Save=20.08ms
+[2017.06.18-14.55.23:044][740]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/StatsD06FD24841EDEFD90A8CEA81D7FE6429.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-14.55.23:052][740]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-14.55.24:433][759]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-14.55.24:487][759]LogSavePackage: Save=36.87ms
+[2017.06.18-14.55.24:488][759]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/StatsDAEDE18440068F53AA2749ACE748F4C4.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-14.55.24:492][759]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-14.55.33:760][968]LogSlate: Took 0.000661 seconds to synchronously load lazily loaded font '../../../Engine/Content/Editor/Slate/Fonts/Roboto-Italic.ttf' (157K)
+[2017.06.18-14.57.34:753][190]BlueprintLog: New page: Compile Stats
+[2017.06.18-14.57.35:790][199]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-14.57.35:895][199]LogSavePackage: Save=89.74ms
+[2017.06.18-14.57.35:895][199]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/StatsD2817E8C4417CC4E39E9CF9A1E673687.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-14.57.35:903][199]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-14.58.19:112][ 57]BlueprintLog: New page: Compile Stats
+[2017.06.18-14.58.20:321][ 69]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-14.58.20:411][ 69]LogSavePackage: Save=74.31ms
+[2017.06.18-14.58.20:411][ 69]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats69E7233B485C8295E9B03D8648545880.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-14.58.20:419][ 69]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-14.58.21:897][ 90]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-14.58.22:000][ 90]LogSavePackage: Save=85.78ms
+[2017.06.18-14.58.22:000][ 90]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats619A938944AA1406AEAE479F8C10B89B.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-14.58.22:005][ 90]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-15.00.01:729][ 89]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.00.03:961][116]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-15.00.04:166][116]LogSavePackage: Save=182.01ms
+[2017.06.18-15.00.04:166][116]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats6C3BD13B405AEDB5F9D3F49F1B19767B.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-15.00.04:176][116]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-15.03.53:754][ 53]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.06.11:081][717]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.057
+[2017.06.18-15.06.11:088][717]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Character/Components/Stats] ([1] browsable assets)...
+[2017.06.18-15.06.11:088][717]OBJ SavePackage: Finished generating thumbnails for package [/Game/Character/Components/Stats]
+[2017.06.18-15.06.11:088][717]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Saved/Autosaves/Game/Character/Components/Stats_Auto1.uasset" SILENT=false AUTOSAVING=true
+[2017.06.18-15.06.11:278][717]LogSavePackage: Save=169.01ms
+[2017.06.18-15.06.11:278][717]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats_Auto10F53249B434C6FDD91B8B899CD6D2243.tmp' to '../../../../../UEProjects/Marduk_0/Saved/Autosaves/Game/Character/Components/Stats_Auto1.uasset'
+[2017.06.18-15.06.11:285][717]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Saved/Autosaves/Game/Character/Components/Stats_Auto1.uasset
+[2017.06.18-15.06.11:285][717]LogFileHelpers: Auto-saving content packages took 0.201
+[2017.06.18-15.20.33:492][853]LogD3D11RHI: Timed out while waiting for GPU to catch up. (0.5 s)
+[2017.06.18-15.26.48:585][ 92]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-15.26.48:778][ 92]LogSavePackage: Save=149.50ms
+[2017.06.18-15.26.48:778][ 92]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats8FC9F6EA42036E310F5084AE7B9FDEB1.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-15.26.48:788][ 92]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-15.28.39:063][366]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.28.40:622][382]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-15.28.40:822][382]LogSavePackage: Save=179.38ms
+[2017.06.18-15.28.40:822][382]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats702C752248C0CFA165AB978A9DE5AAA9.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-15.28.40:832][382]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-15.29.09:832][930]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.30.56:081][493]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.32.29:159][390]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.33.29:741][475]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.34.13:304][318]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.34.44:278][832]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.078
+[2017.06.18-15.34.44:285][832]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Character/Components/Stats] ([1] browsable assets)...
+[2017.06.18-15.34.44:285][832]OBJ SavePackage: Finished generating thumbnails for package [/Game/Character/Components/Stats]
+[2017.06.18-15.34.44:285][832]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Saved/Autosaves/Game/Character/Components/Stats_Auto2.uasset" SILENT=false AUTOSAVING=true
+[2017.06.18-15.34.45:486][832]LogSavePackage: Save=1179.34ms
+[2017.06.18-15.34.45:486][832]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats_Auto2E319433143A361D2D96394A1BB5DBAC7.tmp' to '../../../../../UEProjects/Marduk_0/Saved/Autosaves/Game/Character/Components/Stats_Auto2.uasset'
+[2017.06.18-15.34.45:490][832]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Saved/Autosaves/Game/Character/Components/Stats_Auto2.uasset
+[2017.06.18-15.34.45:490][832]LogFileHelpers: Auto-saving content packages took 1.209
+[2017.06.18-15.35.30:346][559]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.39.16:285][968]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.44.04:496][749]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.44.05:706][759]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-15.44.05:977][759]LogSavePackage: Save=221.36ms
+[2017.06.18-15.44.05:977][759]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats2B5EC5B745902607FB5EAF8D11C8DE67.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-15.44.05:985][759]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-15.44.21:770][ 77]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-15.44.22:041][ 77]LogSavePackage: Save=250.84ms
+[2017.06.18-15.44.22:041][ 77]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats6F4BC2F54AF5CA82978351A7A93ABF4E.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-15.44.22:046][ 77]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-15.44.46:938][535]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.46.37:535][397]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.47.46:905][638]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.48.42:080][696]LogEditorTransaction: Undo Move Node
+[2017.06.18-15.48.43:492][723]LogEditorTransaction: Undo Paste clipboard contents
+[2017.06.18-15.48.47:877][784]LogUObjectHash:Warning: Ambiguous search, could be K2Node_MathExpression /Game/Character/Components/Stats.Stats:CalculateAtributes.K2Node_MathExpression_0 or K2Node_MathExpression /Game/Character/Components/Stats.Stats:CalculateAtributes.K2Node_MathExpression_0
+[2017.06.18-15.50.39:807][859]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.50.41:350][874]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-15.50.41:713][874]LogSavePackage: Save=339.56ms
+[2017.06.18-15.50.41:713][874]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/StatsE02A94594DEDEB69270C248A458A9A60.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-15.50.41:722][874]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-15.53.34:631][843]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.070
+[2017.06.18-15.53.34:637][843]OBJ SavePackage: Generating thumbnails for [0] asset(s) in package [/Game/Character/Components/Stats] ([1] browsable assets)...
+[2017.06.18-15.53.34:637][843]OBJ SavePackage: Finished generating thumbnails for package [/Game/Character/Components/Stats]
+[2017.06.18-15.53.34:637][843]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Saved/Autosaves/Game/Character/Components/Stats_Auto3.uasset" SILENT=false AUTOSAVING=true
+[2017.06.18-15.53.34:971][843]LogSavePackage: Save=314.97ms
+[2017.06.18-15.53.34:971][843]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats_Auto345484EC64847DF78B196A481CB6167FF.tmp' to '../../../../../UEProjects/Marduk_0/Saved/Autosaves/Game/Character/Components/Stats_Auto3.uasset'
+[2017.06.18-15.53.34:975][843]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Saved/Autosaves/Game/Character/Components/Stats_Auto3.uasset
+[2017.06.18-15.53.34:975][843]LogFileHelpers: Auto-saving content packages took 0.342
+[2017.06.18-15.53.43:493][ 36]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.55.05:357][601]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.56.03:359][694]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.57.03:933][ 90]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.57.23:939][511]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.58.08:815][308]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-15.58.09:189][308]LogSavePackage: Save=313.77ms
+[2017.06.18-15.58.09:189][308]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/StatsCE3740D84770F9E2214299A92426F149.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-15.58.09:198][308]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-15.58.21:310][589]BlueprintLog: New page: Compile Stats
+[2017.06.18-15.59.03:572][611]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.02.58:043][151]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.03.00:393][177]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-16.03.00:771][177]LogSavePackage: Save=358.30ms
+[2017.06.18-16.03.00:771][177]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats646185934EDA0C8113BA598D0CBA9904.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-16.03.00:780][177]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-16.03.04:169][240]LogTemp: Repeting last play command: Selected Viewport
+[2017.06.18-16.03.04:342][240]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-16.03.04:343][240]PIE: New page: PIE session: Untitled_1 (Jun 18, 2017, 10:03:04 PM)
+[2017.06.18-16.03.04:343][240]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2017.06.18-16.03.04:352][240]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008670s)
+[2017.06.18-16.03.04:354][240]LogAIModule: Creating AISystem for world Untitled_1
+[2017.06.18-16.03.04:355][240]LogPlayLevel: PIE: World Init took: (0.003065s)
+[2017.06.18-16.03.04:355][240]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.012331s)
+[2017.06.18-16.03.04:412][240]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.18-16.03.04:433][240]LogInit: FAudioDevice initialized.
+[2017.06.18-16.03.05:507][240]LogLoad: Game class is 'GameMode_0_C'
+[2017.06.18-16.03.05:515][240]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 60) at 2017.06.18-19.03.05
+[2017.06.18-16.03.05:516][240]LogWorld: Bringing up level for play took: 0.003152
+[2017.06.18-16.03.05:662][240]LogContentBrowser: Native class hierarchy updated for 'MovieSceneCapture' in 0.0022 seconds. Added 11 classes and 0 folders.
+[2017.06.18-16.03.05:665][240]LogScript:Warning: Accessed None trying to read property SpringArm
+	AnimBP_0_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Character_0_C_0.CharacterMesh0.AnimBP_0_C_0
+	Function /Game/Character/Animations/Movement/AnimBP_0.AnimBP_0_C:ExecuteUbergraph_AnimBP_0:082F
+[2017.06.18-16.03.05:665][240]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property SpringArm from function: 'ExecuteUbergraph_AnimBP_0' from node: Set in graph: EventGraph in object: AnimBP_0 with description: Accessed None trying to read property SpringArm
+[2017.06.18-16.03.05:673][240]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.842
+[2017.06.18-16.03.31:861][770]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.03.33:233][781]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-16.03.33:615][781]LogSavePackage: Save=357.15ms
+[2017.06.18-16.03.33:615][781]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/StatsB75D115D40E3F3B0CDF9D2903E1A6CF8.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-16.03.33:624][781]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-16.03.35:319][812]LogTemp: Repeting last play command: Selected Viewport
+[2017.06.18-16.03.35:397][812]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-16.03.35:397][812]PIE: New page: PIE session: Untitled_1 (Jun 18, 2017, 10:03:35 PM)
+[2017.06.18-16.03.35:397][812]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2017.06.18-16.03.35:407][812]LogPlayLevel: PIE: StaticDuplicateObject took: (0.009682s)
+[2017.06.18-16.03.35:410][812]LogAIModule: Creating AISystem for world Untitled_1
+[2017.06.18-16.03.35:411][812]LogPlayLevel: PIE: World Init took: (0.003256s)
+[2017.06.18-16.03.35:411][812]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.013721s)
+[2017.06.18-16.03.35:478][812]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.18-16.03.35:499][812]LogInit: FAudioDevice initialized.
+[2017.06.18-16.03.35:550][812]LogLoad: Game class is 'GameMode_0_C'
+[2017.06.18-16.03.35:556][812]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 60) at 2017.06.18-19.03.35
+[2017.06.18-16.03.35:557][812]LogWorld: Bringing up level for play took: 0.003492
+[2017.06.18-16.03.35:560][812]LogScript:Warning: Accessed None trying to read property SpringArm
+	AnimBP_0_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Character_0_C_0.CharacterMesh0.AnimBP_0_C_0
+	Function /Game/Character/Animations/Movement/AnimBP_0.AnimBP_0_C:ExecuteUbergraph_AnimBP_0:082F
+[2017.06.18-16.03.35:560][812]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property SpringArm from function: 'ExecuteUbergraph_AnimBP_0' from node: Set in graph: EventGraph in object: AnimBP_0 with description: Accessed None trying to read property SpringArm
+[2017.06.18-16.03.35:565][812]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.735
+[2017.06.18-16.04.31:482][995]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.04.32:879][ 10]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-16.04.33:797][ 10]LogSavePackage: Save=901.43ms
+[2017.06.18-16.04.33:798][ 10]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/StatsA5CEF2954A53C7C4C00F849798F8CD13.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-16.04.33:808][ 10]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-16.04.37:932][110]LogTemp: Repeting last play command: Selected Viewport
+[2017.06.18-16.04.38:006][110]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-16.04.38:006][110]PIE: New page: PIE session: Untitled_1 (Jun 18, 2017, 10:04:38 PM)
+[2017.06.18-16.04.38:006][110]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2017.06.18-16.04.38:015][110]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008401s)
+[2017.06.18-16.04.38:017][110]LogAIModule: Creating AISystem for world Untitled_1
+[2017.06.18-16.04.38:018][110]LogPlayLevel: PIE: World Init took: (0.002880s)
+[2017.06.18-16.04.38:018][110]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.011950s)
+[2017.06.18-16.04.38:079][110]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.18-16.04.38:100][110]LogInit: FAudioDevice initialized.
+[2017.06.18-16.04.38:151][110]LogLoad: Game class is 'GameMode_0_C'
+[2017.06.18-16.04.38:157][110]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 60) at 2017.06.18-19.04.38
+[2017.06.18-16.04.38:157][110]LogWorld: Bringing up level for play took: 0.003153
+[2017.06.18-16.04.38:160][110]LogScript:Warning: Accessed None trying to read property SpringArm
+	AnimBP_0_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Character_0_C_0.CharacterMesh0.AnimBP_0_C_0
+	Function /Game/Character/Animations/Movement/AnimBP_0.AnimBP_0_C:ExecuteUbergraph_AnimBP_0:082F
+[2017.06.18-16.04.38:160][110]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property SpringArm from function: 'ExecuteUbergraph_AnimBP_0' from node: Set in graph: EventGraph in object: AnimBP_0 with description: Accessed None trying to read property SpringArm
+[2017.06.18-16.04.38:165][110]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.665
+[2017.06.18-16.05.21:730][199]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.05.23:246][215]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-16.05.23:605][215]LogSavePackage: Save=332.74ms
+[2017.06.18-16.05.23:605][215]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/StatsC024D4EB4A311A6B497DFBA3A866FBC6.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-16.05.23:613][215]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-16.05.25:817][264]LogTemp: Repeting last play command: Selected Viewport
+[2017.06.18-16.05.25:892][264]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-16.05.25:893][264]PIE: New page: PIE session: Untitled_1 (Jun 18, 2017, 10:05:25 PM)
+[2017.06.18-16.05.25:893][264]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2017.06.18-16.05.25:900][264]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007303s)
+[2017.06.18-16.05.25:902][264]LogAIModule: Creating AISystem for world Untitled_1
+[2017.06.18-16.05.25:903][264]LogPlayLevel: PIE: World Init took: (0.002802s)
+[2017.06.18-16.05.25:903][264]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.010700s)
+[2017.06.18-16.05.25:968][264]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.18-16.05.25:988][264]LogInit: FAudioDevice initialized.
+[2017.06.18-16.05.26:036][264]LogLoad: Game class is 'GameMode_0_C'
+[2017.06.18-16.05.26:042][264]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 60) at 2017.06.18-19.05.26
+[2017.06.18-16.05.26:043][264]LogWorld: Bringing up level for play took: 0.003148
+[2017.06.18-16.05.26:046][264]LogScript:Warning: Accessed None trying to read property SpringArm
+	AnimBP_0_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Character_0_C_0.CharacterMesh0.AnimBP_0_C_0
+	Function /Game/Character/Animations/Movement/AnimBP_0.AnimBP_0_C:ExecuteUbergraph_AnimBP_0:082F
+[2017.06.18-16.05.26:046][264]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property SpringArm from function: 'ExecuteUbergraph_AnimBP_0' from node: Set in graph: EventGraph in object: AnimBP_0 with description: Accessed None trying to read property SpringArm
+[2017.06.18-16.05.26:051][264]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.78
+[2017.06.18-16.06.01:021][115]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.06.02:500][131]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-16.06.02:848][131]LogSavePackage: Save=330.70ms
+[2017.06.18-16.06.02:848][131]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats10A0CEE9416CF1BEE85F209FC7612987.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-16.06.02:856][131]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-16.06.06:319][198]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-16.06.06:723][198]LogSavePackage: Save=383.09ms
+[2017.06.18-16.06.06:723][198]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/StatsCDF850B9403F711582EC5D9F1C4C48D5.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-16.06.06:727][198]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-16.06.07:171][208]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.06.09:882][256]LogTemp: Repeting last play command: Selected Viewport
+[2017.06.18-16.06.09:956][256]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-16.06.09:957][256]PIE: New page: PIE session: Untitled_1 (Jun 18, 2017, 10:06:09 PM)
+[2017.06.18-16.06.09:957][256]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2017.06.18-16.06.09:965][256]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007716s)
+[2017.06.18-16.06.09:967][256]LogAIModule: Creating AISystem for world Untitled_1
+[2017.06.18-16.06.09:968][256]LogPlayLevel: PIE: World Init took: (0.002817s)
+[2017.06.18-16.06.09:968][256]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.011169s)
+[2017.06.18-16.06.10:028][256]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.18-16.06.10:048][256]LogInit: FAudioDevice initialized.
+[2017.06.18-16.06.10:100][256]LogLoad: Game class is 'GameMode_0_C'
+[2017.06.18-16.06.10:105][256]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 60) at 2017.06.18-19.06.10
+[2017.06.18-16.06.10:106][256]LogWorld: Bringing up level for play took: 0.003176
+[2017.06.18-16.06.10:109][256]LogScript:Warning: Accessed None trying to read property SpringArm
+	AnimBP_0_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Character_0_C_0.CharacterMesh0.AnimBP_0_C_0
+	Function /Game/Character/Animations/Movement/AnimBP_0.AnimBP_0_C:ExecuteUbergraph_AnimBP_0:082F
+[2017.06.18-16.06.10:109][256]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property SpringArm from function: 'ExecuteUbergraph_AnimBP_0' from node: Set in graph: EventGraph in object: AnimBP_0 with description: Accessed None trying to read property SpringArm
+[2017.06.18-16.06.10:114][256]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.717
+[2017.06.18-16.07.03:974][663]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.07.48:117][487]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-16.07.48:490][487]LogSavePackage: Save=352.92ms
+[2017.06.18-16.07.48:490][487]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats0E165E7D4EA5A583DFFDCFB4C115C7EA.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-16.07.48:498][487]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-16.08.05:621][793]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.08.07:501][817]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-16.08.07:904][817]LogSavePackage: Save=376.83ms
+[2017.06.18-16.08.07:904][817]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats2680FB7D48A17A273443ACB82EAD1905.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-16.08.07:913][817]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-16.08.13:095][939]LogTemp: Repeting last play command: Selected Viewport
+[2017.06.18-16.08.13:169][939]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-16.08.13:169][939]PIE: New page: PIE session: Untitled_1 (Jun 18, 2017, 10:08:13 PM)
+[2017.06.18-16.08.13:169][939]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2017.06.18-16.08.13:178][939]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008292s)
+[2017.06.18-16.08.13:180][939]LogAIModule: Creating AISystem for world Untitled_1
+[2017.06.18-16.08.13:181][939]LogPlayLevel: PIE: World Init took: (0.003272s)
+[2017.06.18-16.08.13:181][939]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.012140s)
+[2017.06.18-16.08.13:242][939]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.18-16.08.13:263][939]LogInit: FAudioDevice initialized.
+[2017.06.18-16.08.13:313][939]LogLoad: Game class is 'GameMode_0_C'
+[2017.06.18-16.08.13:319][939]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 60) at 2017.06.18-19.08.13
+[2017.06.18-16.08.13:319][939]LogWorld: Bringing up level for play took: 0.003283
+[2017.06.18-16.08.13:322][939]LogScript:Warning: Accessed None trying to read property SpringArm
+	AnimBP_0_C /Temp/UEDPIE_0_Untitled_1.Untitled_1:PersistentLevel.Character_0_C_0.CharacterMesh0.AnimBP_0_C_0
+	Function /Game/Character/Animations/Movement/AnimBP_0.AnimBP_0_C:ExecuteUbergraph_AnimBP_0:082F
+[2017.06.18-16.08.13:322][939]PIE:Error: Error Blueprint Runtime Error: Accessed None trying to read property SpringArm from function: 'ExecuteUbergraph_AnimBP_0' from node: Set in graph: EventGraph in object: AnimBP_0 with description: Accessed None trying to read property SpringArm
+[2017.06.18-16.08.13:327][939]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.496
+[2017.06.18-16.08.27:678][321]LogContentBrowser: Native class hierarchy updated for 'SkeletonEditor' in 0.0019 seconds. Added 1 classes and 2 folders.
+[2017.06.18-16.08.28:108][321]LogActorComponent: RegisterComponentWithWorld: (/Engine/Transient.World_2:PersistentLevel.Actor_0.DebugSkelMeshComponent_0) Already registered. Aborting.
+[2017.06.18-16.08.28:993][321]LogSkeletalMesh: USkeletalMeshComponent::InitArticulated : Bodies already created (/Engine/Transient.World_2:PersistentLevel.Actor_0.DebugSkelMeshComponent_0) - call TermArticulated first.
+[2017.06.18-16.08.29:977][321]LogContentBrowser: Native class hierarchy updated for 'ClothingSystemEditorInterface' in 0.0020 seconds. Added 1 classes and 0 folders.
+[2017.06.18-16.08.47:687][587]BlueprintLog: New page: Compile AnimBP_0
+[2017.06.18-16.08.48:362][587]BlueprintEditorCompileResults: Info  Base Pose  was visible but ignored
+[2017.06.18-16.08.55:824][724]LogTemp: Repeting last play command: Selected Viewport
+[2017.06.18-16.08.55:899][724]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-16.08.55:900][724]PIE: New page: PIE session: Untitled_1 (Jun 18, 2017, 10:08:55 PM)
+[2017.06.18-16.08.55:900][724]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2017.06.18-16.08.55:908][724]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008088s)
+[2017.06.18-16.08.55:911][724]LogAIModule: Creating AISystem for world Untitled_1
+[2017.06.18-16.08.55:912][724]LogPlayLevel: PIE: World Init took: (0.003036s)
+[2017.06.18-16.08.55:912][724]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.011747s)
+[2017.06.18-16.08.56:002][724]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.18-16.08.56:022][724]LogInit: FAudioDevice initialized.
+[2017.06.18-16.08.56:073][724]LogLoad: Game class is 'GameMode_0_C'
+[2017.06.18-16.08.56:079][724]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 60) at 2017.06.18-19.08.56
+[2017.06.18-16.08.56:080][724]LogWorld: Bringing up level for play took: 0.003284
+[2017.06.18-16.08.56:087][724]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.744
+[2017.06.18-16.09.26:464][405]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.09.31:184][499]LogTemp: Repeting last play command: Selected Viewport
+[2017.06.18-16.09.31:269][499]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-16.09.31:269][499]PIE: New page: PIE session: Untitled_1 (Jun 18, 2017, 10:09:31 PM)
+[2017.06.18-16.09.31:269][499]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2017.06.18-16.09.31:277][499]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007408s)
+[2017.06.18-16.09.31:279][499]LogAIModule: Creating AISystem for world Untitled_1
+[2017.06.18-16.09.31:280][499]LogPlayLevel: PIE: World Init took: (0.002722s)
+[2017.06.18-16.09.31:280][499]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.010719s)
+[2017.06.18-16.09.31:338][499]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.18-16.09.31:358][499]LogInit: FAudioDevice initialized.
+[2017.06.18-16.09.31:405][499]LogLoad: Game class is 'GameMode_0_C'
+[2017.06.18-16.09.31:411][499]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 60) at 2017.06.18-19.09.31
+[2017.06.18-16.09.31:412][499]LogWorld: Bringing up level for play took: 0.003169
+[2017.06.18-16.09.31:419][499]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.588
+[2017.06.18-16.10.06:539][322]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.10.30:092][750]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-16.10.30:474][750]LogSavePackage: Save=353.22ms
+[2017.06.18-16.10.30:474][750]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats12588EC442573B6D8891FD951D549D57.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-16.10.30:482][750]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-16.10.31:693][775]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.10.35:956][861]LogTemp: Repeting last play command: Selected Viewport
+[2017.06.18-16.10.36:031][861]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-16.10.36:032][861]PIE: New page: PIE session: Untitled_1 (Jun 18, 2017, 10:10:36 PM)
+[2017.06.18-16.10.36:032][861]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2017.06.18-16.10.36:040][861]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007571s)
+[2017.06.18-16.10.36:042][861]LogAIModule: Creating AISystem for world Untitled_1
+[2017.06.18-16.10.36:043][861]LogPlayLevel: PIE: World Init took: (0.003158s)
+[2017.06.18-16.10.36:043][861]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.011332s)
+[2017.06.18-16.10.36:106][861]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.18-16.10.36:128][861]LogInit: FAudioDevice initialized.
+[2017.06.18-16.10.36:182][861]LogLoad: Game class is 'GameMode_0_C'
+[2017.06.18-16.10.36:188][861]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 60) at 2017.06.18-19.10.36
+[2017.06.18-16.10.36:188][861]LogWorld: Bringing up level for play took: 0.003196
+[2017.06.18-16.10.36:196][861]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.635
+[2017.06.18-16.11.20:494][482]LogEditorTransaction: Undo Delete current selection
+[2017.06.18-16.11.27:087][603]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-16.11.27:469][603]LogSavePackage: Save=361.30ms
+[2017.06.18-16.11.27:469][603]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/StatsFEBA5B3C4F9B1876F46B5798664A79E2.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-16.11.27:477][603]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-16.11.28:640][627]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.11.32:570][704]LogTemp: Repeting last play command: Selected Viewport
+[2017.06.18-16.11.32:646][704]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-16.11.32:646][704]PIE: New page: PIE session: Untitled_1 (Jun 18, 2017, 10:11:32 PM)
+[2017.06.18-16.11.32:647][704]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2017.06.18-16.11.32:656][704]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008008s)
+[2017.06.18-16.11.32:658][704]LogAIModule: Creating AISystem for world Untitled_1
+[2017.06.18-16.11.32:658][704]LogPlayLevel: PIE: World Init took: (0.002585s)
+[2017.06.18-16.11.32:659][704]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.011340s)
+[2017.06.18-16.11.32:720][704]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.18-16.11.32:740][704]LogInit: FAudioDevice initialized.
+[2017.06.18-16.11.32:792][704]LogLoad: Game class is 'GameMode_0_C'
+[2017.06.18-16.11.32:797][704]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 60) at 2017.06.18-19.11.32
+[2017.06.18-16.11.32:798][704]LogWorld: Bringing up level for play took: 0.003178
+[2017.06.18-16.11.32:805][704]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 -0.026
+[2017.06.18-16.12.03:663][ 46]LogFileHelpers: Editor autosave (incl. sublevels) for '/Temp/Untitled_1' took 0.053
+[2017.06.18-16.12.03:669][ 46]OBJ SavePackage: Generating thumbnails for [1] asset(s) in package [/Game/Character/Animations/Movement/AnimBP_0] ([1] browsable assets)...
+[2017.06.18-16.12.03:713][ 46]OBJ SavePackage:     Rendered thumbnail for [AnimBlueprint /Game/Character/Animations/Movement/AnimBP_0.AnimBP_0]
+[2017.06.18-16.12.03:713][ 46]OBJ SavePackage: Finished generating thumbnails for package [/Game/Character/Animations/Movement/AnimBP_0]
+[2017.06.18-16.12.04:394][ 46]LogSavePackage: Save=652.07ms
+[2017.06.18-16.12.04:394][ 46]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/AnimBP_0_Auto4B96C8B724A4836ED7A6D8A9D369FD498.tmp' to '../../../../../UEProjects/Marduk_0/Saved/Autosaves/Game/Character/Animations/Movement/AnimBP_0_Auto4.uasset'
+[2017.06.18-16.12.04:399][ 46]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Saved/Autosaves/Game/Character/Animations/Movement/AnimBP_0_Auto4.uasset
+[2017.06.18-16.12.04:400][ 46]LogFileHelpers: Auto-saving content packages took 0.735
+[2017.06.18-16.17.00:478][306]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.17.37:867][  2]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.17.39:284][ 18]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-16.17.39:701][ 18]LogSavePackage: Save=359.32ms
+[2017.06.18-16.17.39:701][ 18]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/StatsF7D2F7F849B0A8FDED37798AEA4D44ED.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-16.17.39:710][ 18]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-16.17.48:715][154]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-16.17.49:141][154]LogSavePackage: Save=405.87ms
+[2017.06.18-16.17.49:141][154]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Stats3FC322BF4D7E5AB365CB5AABE6B33237.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-16.17.49:150][154]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-16.17.51:317][198]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.18.07:686][509]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.18.25:282][838]LogEditorTransaction: Undo Delete current selection
+[2017.06.18-16.18.38:178][ 83]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.18.40:027][107]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Components/Stats" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset" SILENT=true
+[2017.06.18-16.18.40:383][107]LogSavePackage: Save=336.04ms
+[2017.06.18-16.18.40:383][107]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/StatsD0E736734B989F78EBA4EE8A51F2BBB4.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset'
+[2017.06.18-16.18.40:392][107]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Components/Stats.uasset
+[2017.06.18-16.18.44:508][200]LogTemp: Repeting last play command: Selected Viewport
+[2017.06.18-16.18.44:617][200]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-16.18.44:618][200]PIE: New page: PIE session: Untitled_1 (Jun 18, 2017, 10:18:44 PM)
+[2017.06.18-16.18.44:618][200]LogPlayLevel: Creating play world package: /Temp/UEDPIE_0_Untitled_1
+[2017.06.18-16.18.44:631][200]LogPlayLevel: PIE: StaticDuplicateObject took: (0.012903s)
+[2017.06.18-16.18.44:635][200]LogAIModule: Creating AISystem for world Untitled_1
+[2017.06.18-16.18.44:636][200]LogPlayLevel: PIE: World Init took: (0.004606s)
+[2017.06.18-16.18.44:636][200]LogPlayLevel: PIE: Created PIE world by copying editor world from /Temp/Untitled_1.Untitled_1 to /Temp/UEDPIE_0_Untitled_1.Untitled_1 (0.018337s)
+[2017.06.18-16.18.44:743][200]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.18-16.18.44:779][200]LogInit: FAudioDevice initialized.
+[2017.06.18-16.18.44:850][200]LogLoad: Game class is 'GameMode_0_C'
+[2017.06.18-16.18.44:864][200]LogWorld: Bringing World /Temp/UEDPIE_0_Untitled_1.Untitled_1 up for play (max tick rate 60) at 2017.06.18-19.18.44
+[2017.06.18-16.18.44:866][200]LogWorld: Bringing up level for play took: 0.008992
+[2017.06.18-16.18.44:881][200]PIE: Info Play in editor start time for /Temp/UEDPIE_0_Untitled_1 0.051
+[2017.06.18-16.19.01:708][643]LogTextFormatter:Warning: Failed to parse argument "ExistingAsset" as a number (using "0" as a fallback). Please check your format string for errors: "{ExistingAsset} already exists. Do you want to replace it?".
+[2017.06.18-16.19.05:505][643]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Maps/Map0" FILE="../../../../../UEProjects/Marduk_0/Content/Maps/Map0.umap" SILENT=true AUTOSAVING=false KEEPDIRTY=false
+[2017.06.18-16.19.05:731][643]LogSavePackage: Save=134.64ms
+[2017.06.18-16.19.05:732][643]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/Map0A0FF6CEC4EA84F61AE6BF4BEB23EC036.tmp' to '../../../../../UEProjects/Marduk_0/Content/Maps/Map0.umap'
+[2017.06.18-16.19.05:736][643]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Maps/Map0.umap
+[2017.06.18-16.19.05:874][643]LogFileHelpers: Saving map 'Map0' took 2.001
+[2017.06.18-16.19.11:519][789]LogTemp: Repeting last play command: Selected Viewport
+[2017.06.18-16.19.11:596][789]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-16.19.11:596][789]PIE: New page: PIE session: Map0 (Jun 18, 2017, 10:19:11 PM)
+[2017.06.18-16.19.11:597][789]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Map0
+[2017.06.18-16.19.11:604][789]LogPlayLevel: PIE: StaticDuplicateObject took: (0.007509s)
+[2017.06.18-16.19.11:606][789]LogAIModule: Creating AISystem for world Map0
+[2017.06.18-16.19.11:607][789]LogPlayLevel: PIE: World Init took: (0.002623s)
+[2017.06.18-16.19.11:607][789]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Map0.Map0 to /Game/Maps/UEDPIE_0_Map0.Map0 (0.010711s)
+[2017.06.18-16.19.11:690][789]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.18-16.19.11:710][789]LogInit: FAudioDevice initialized.
+[2017.06.18-16.19.11:760][789]LogLoad: Game class is 'GameMode_0_C'
+[2017.06.18-16.19.11:766][789]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Map0.Map0 up for play (max tick rate 60) at 2017.06.18-19.19.11
+[2017.06.18-16.19.11:767][789]LogWorld: Bringing up level for play took: 0.003260
+[2017.06.18-16.19.11:774][789]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_Map0 0.943
+[2017.06.18-16.20.33:165][225]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.18-16.20.33:166][225]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.18-16.21.00:689][764]BlueprintLog: New page: Compile Stats
+[2017.06.18-16.21.03:861][823]LogTemp: Repeting last play command: Selected Viewport
+[2017.06.18-16.21.03:938][823]LogPlayLevel: PlayLevel: No blueprints needed recompiling
+[2017.06.18-16.21.03:938][823]PIE: New page: PIE session: Map0 (Jun 18, 2017, 10:21:03 PM)
+[2017.06.18-16.21.03:938][823]LogPlayLevel: Creating play world package: /Game/Maps/UEDPIE_0_Map0
+[2017.06.18-16.21.03:946][823]LogPlayLevel: PIE: StaticDuplicateObject took: (0.008012s)
+[2017.06.18-16.21.03:949][823]LogAIModule: Creating AISystem for world Map0
+[2017.06.18-16.21.03:950][823]LogPlayLevel: PIE: World Init took: (0.003083s)
+[2017.06.18-16.21.03:950][823]LogPlayLevel: PIE: Created PIE world by copying editor world from /Game/Maps/Map0.Map0 to /Game/Maps/UEDPIE_0_Map0.Map0 (0.011721s)
+[2017.06.18-16.21.04:015][823]LogInit: XAudio2 using 'Динамики (Устройство с поддержкой High Definition Audio)' : 2 channels at 44.1 kHz using 16 bits per sample (channel mask 0x3)
+[2017.06.18-16.21.04:036][823]LogInit: FAudioDevice initialized.
+[2017.06.18-16.21.04:088][823]LogLoad: Game class is 'GameMode_0_C'
+[2017.06.18-16.21.04:094][823]LogWorld: Bringing World /Game/Maps/UEDPIE_0_Map0.Map0 up for play (max tick rate 60) at 2017.06.18-19.21.04
+[2017.06.18-16.21.04:094][823]LogWorld: Bringing up level for play took: 0.003274
+[2017.06.18-16.21.04:102][823]PIE: Info Play in editor start time for /Game/Maps/UEDPIE_0_Map0 -0.729
+[2017.06.18-16.21.17:715][258]LogUProjectInfo: Found projects:
+[2017.06.18-16.21.18:891][284]Cmd: CLOSE_SLATE_MAINFRAME
+[2017.06.18-16.21.20:526][284]Cmd: OBJ SAVEPACKAGE PACKAGE="/Game/Character/Animations/Movement/AnimBP_0" FILE="../../../../../UEProjects/Marduk_0/Content/Character/Animations/Movement/AnimBP_0.uasset" SILENT=true
+[2017.06.18-16.21.21:219][284]LogSavePackage: Save=667.40ms
+[2017.06.18-16.21.21:219][284]LogSavePackage: Moving '../../../../../UEProjects/Marduk_0/Saved/AnimBP_0FF46CC7344D7F22755AB85A5C52BA638.tmp' to '../../../../../UEProjects/Marduk_0/Content/Character/Animations/Movement/AnimBP_0.uasset'
+[2017.06.18-16.21.21:228][284]LogSavePackage:Display: Finished SavePackage ../../../../../UEProjects/Marduk_0/Content/Character/Animations/Movement/AnimBP_0.uasset
+[2017.06.18-16.21.21:539][284]LogWindowsTextInputMethodSystem:Display: IME system now deactivated.
+[2017.06.18-16.21.21:860][285]Cmd: QUIT_EDITOR
+[2017.06.18-16.21.22:760][285]LogExit: Preparing to exit.
+[2017.06.18-16.21.23:999][285]LogDirectoryWatcher: A directory notification for 'D:/Workspace/UEProjects/Marduk_0/Content/' was aborted.
+[2017.06.18-16.21.24:108][285]LogExit: Editor shut down
+[2017.06.18-16.21.24:123][285]LogExit: Transaction tracking system shut down
+[2017.06.18-16.21.24:468][285]LogObj: Freed 0b from 0 cluster array pools.
+[2017.06.18-16.21.24:468][285]LogExit: Object subsystem successfully closed.
+[2017.06.18-16.21.24:505][285]LogD3D11RHI: Shutdown
+[2017.06.18-16.21.24:505][285]LogD3D11RHI: CleanupD3DDevice
+[2017.06.18-16.21.24:584][285]LogD3D11RHI: ~FD3D11DynamicRHI
+[2017.06.18-16.21.24:626][285]LogModuleManager: Shutting down and abandoning module ClothingSystemEditorInterface (536)
+[2017.06.18-16.21.24:626][285]LogModuleManager: Shutting down and abandoning module SkeletonEditor (534)
+[2017.06.18-16.21.24:626][285]LogModuleManager: Shutting down and abandoning module AnimationBlueprintEditor (532)
+[2017.06.18-16.21.24:626][285]LogModuleManager: Shutting down and abandoning module MovieSceneCapture (530)
+[2017.06.18-16.21.24:626][285]LogModuleManager: Shutting down and abandoning module BlueprintGraph (528)
+[2017.06.18-16.21.24:627][285]LogModuleManager: Shutting down and abandoning module BlueprintProfiler (526)
+[2017.06.18-16.21.24:627][285]LogModuleManager: Shutting down and abandoning module HierarchicalLODOutliner (524)
+[2017.06.18-16.21.24:627][285]LogModuleManager: Shutting down and abandoning module CrashTracker (522)
+[2017.06.18-16.21.24:627][285]LogModuleManager: Shutting down and abandoning module SceneOutliner (520)
+[2017.06.18-16.21.24:627][285]LogModuleManager: Shutting down and abandoning module AddContentDialog (518)
+[2017.06.18-16.21.24:627][285]LogDirectoryWatcher: A directory notification for 'D:/Workspace/Programs/UE_4.16/FeaturePacks/' was aborted.
+[2017.06.18-16.21.24:630][285]LogModuleManager: Shutting down and abandoning module WidgetCarousel (517)
+[2017.06.18-16.21.24:630][285]LogModuleManager: Shutting down and abandoning module EditorWidgets (514)
+[2017.06.18-16.21.24:630][285]LogModuleManager: Shutting down and abandoning module CollectionManager (512)
+[2017.06.18-16.21.24:630][285]LogDirectoryWatcher: A directory notification for 'D:/Workspace/UEProjects/Marduk_0/Content/Collections/' was aborted.
+[2017.06.18-16.21.24:630][285]LogDirectoryWatcher: A directory notification for 'D:/Workspace/UEProjects/Marduk_0/Content/Developers/SyfeNora/Collections/' was aborted.
+[2017.06.18-16.21.24:630][285]LogDirectoryWatcher: A directory notification for 'D:/Workspace/UEProjects/Marduk_0/Saved/Collections/' was aborted.
+[2017.06.18-16.21.24:630][285]LogModuleManager: Shutting down and abandoning module StatsViewer (510)
+[2017.06.18-16.21.24:630][285]LogModuleManager: Shutting down and abandoning module FoliageEdit (508)
+[2017.06.18-16.21.24:630][285]LogModuleManager: Shutting down and abandoning module LandscapeEditor (506)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module MeshPaintMode (504)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module SceneDepthPickerMode (502)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module ActorPickerMode (500)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module GeometryMode (498)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module TextureAlignMode (496)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module BspMode (494)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module HardwareSurvey (492)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module SequenceRecorderSections (490)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module AutomationWorker (488)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module MatineeToLevelSequence (486)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module LevelSequenceEditor (484)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module PlacementMode (483)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module WmfMediaFactory (480)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module WmfMediaEditor (478)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module AvfMediaFactory (476)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module AvfMediaEditor (474)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module AndroidMediaFactory (472)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module Media (471)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module AndroidMediaEditor (468)
+[2017.06.18-16.21.24:631][285]LogModuleManager: Shutting down and abandoning module CharacterAI (466)
+[2017.06.18-16.21.24:632][285]LogModuleManager: Shutting down and abandoning module AudioCapture (464)
+[2017.06.18-16.21.24:632][285]LogModuleManager: Shutting down and abandoning module SequenceRecorder (463)
+[2017.06.18-16.21.24:632][285]LogModuleManager: Shutting down and abandoning module SmartSnapping (460)
+[2017.06.18-16.21.24:632][285]LogModuleManager: Shutting down and abandoning module SessionServices (458)
+[2017.06.18-16.21.24:632][285]LogModuleManager: Shutting down and abandoning module ViewportSnapping (456)
+[2017.06.18-16.21.24:632][285]LogModuleManager: Shutting down and abandoning module ViewportInteraction (454)
+[2017.06.18-16.21.24:632][285]LogModuleManager: Shutting down and abandoning module ClothPainter (452)
+[2017.06.18-16.21.24:632][285]LogModuleManager: Shutting down and abandoning module LogVisualizer (450)
+[2017.06.18-16.21.24:632][285]LogModuleManager: Shutting down and abandoning module IntroTutorials (448)
+[2017.06.18-16.21.24:632][285]LogModuleManager: Shutting down and abandoning module GameProjectGeneration (447)
+[2017.06.18-16.21.24:632][285]LogModuleManager: Shutting down and abandoning module EditorLiveStreaming (444)
+[2017.06.18-16.21.24:632][285]LogModuleManager: Shutting down and abandoning module IOSPlatformEditor (442)
+[2017.06.18-16.21.24:632][285]LogModuleManager: Shutting down and abandoning module HTML5PlatformEditor (440)
+[2017.06.18-16.21.24:632][285]LogModuleManager: Shutting down and abandoning module AndroidPlatformEditor (438)
+[2017.06.18-16.21.24:632][285]LogModuleManager: Shutting down and abandoning module AndroidDeviceDetection (437)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module IOSRuntimeSettings (434)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module AndroidRuntimeSettings (432)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module InputBindingEditor (430)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module MergeActors (428)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module SizeMap (426)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module TreeMap (424)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module ReferenceViewer (422)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module LocalizationDashboard (420)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module LocalizationService (419)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module HardwareTargeting (416)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module DeviceProfileEditor (414)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module UndoHistory (412)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module UserFeedback (410)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module XmlParser (408)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module Blutility (406)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module ProjectSettingsViewer (404)
+[2017.06.18-16.21.25:520][285]LogModuleManager: Shutting down and abandoning module ProjectTargetPlatformEditor (403)
+[2017.06.18-16.21.25:521][285]LogModuleManager: Shutting down and abandoning module EditorSettingsViewer (400)
+[2017.06.18-16.21.25:521][285]LogModuleManager: Shutting down and abandoning module SettingsEditor (398)
+[2017.06.18-16.21.25:521][285]LogModuleManager: Shutting down and abandoning module ProjectLauncher (396)
+[2017.06.18-16.21.25:521][285]LogModuleManager: Shutting down and abandoning module SessionFrontend (394)
+[2017.06.18-16.21.25:521][285]LogModuleManager: Shutting down and abandoning module ProfilerClient (392)
+[2017.06.18-16.21.25:521][285]LogModuleManager: Shutting down and abandoning module DeviceManager (390)
+[2017.06.18-16.21.25:521][285]LogModuleManager: Shutting down and abandoning module TargetDeviceServices (389)
+[2017.06.18-16.21.25:565][285]LogModuleManager: Shutting down and abandoning module AutomationController (386)
+[2017.06.18-16.21.25:565][285]LogModuleManager: Shutting down and abandoning module AutomationWindow (384)
+[2017.06.18-16.21.25:565][285]LogModuleManager: Shutting down and abandoning module Layers (382)
+[2017.06.18-16.21.25:565][285]LogModuleManager: Shutting down and abandoning module ComponentVisualizers (380)
+[2017.06.18-16.21.25:565][285]LogModuleManager: Shutting down and abandoning module DetailCustomizations (378)
+[2017.06.18-16.21.25:565][285]LogModuleManager: Shutting down and abandoning module PackagesDialog (376)
+[2017.06.18-16.21.25:565][285]LogModuleManager: Shutting down and abandoning module Persona (374)
+[2017.06.18-16.21.25:566][285]LogModuleManager: Shutting down and abandoning module AdvancedPreviewScene (373)
+[2017.06.18-16.21.25:566][285]LogModuleManager: Shutting down and abandoning module AnimGraph (371)
+[2017.06.18-16.21.25:566][285]LogModuleManager: Shutting down and abandoning module Kismet (368)
+[2017.06.18-16.21.25:588][285]LogModuleManager: Shutting down and abandoning module ClassViewer (366)
+[2017.06.18-16.21.25:588][285]LogModuleManager: Shutting down and abandoning module Toolbox (364)
+[2017.06.18-16.21.25:588][285]LogModuleManager: Shutting down and abandoning module ModuleUI (362)
+[2017.06.18-16.21.25:588][285]LogModuleManager: Shutting down and abandoning module MovieSceneTools (360)
+[2017.06.18-16.21.25:588][285]LogModuleManager: Shutting down and abandoning module OutputLog (358)
+[2017.06.18-16.21.25:588][285]LogModuleManager: Shutting down and abandoning module GammaUI (356)
+[2017.06.18-16.21.25:588][285]LogModuleManager: Shutting down and abandoning module Documentation (354)
+[2017.06.18-16.21.25:589][285]LogModuleManager: Shutting down and abandoning module MovieSceneTracks (352)
+[2017.06.18-16.21.25:589][285]LogModuleManager: Shutting down and abandoning module MovieScene (350)
+[2017.06.18-16.21.25:589][285]LogModuleManager: Shutting down and abandoning module Niagara (348)
+[2017.06.18-16.21.25:589][285]LogModuleManager: Shutting down and abandoning module NiagaraEditor (347)
+[2017.06.18-16.21.25:589][285]LogModuleManager: Shutting down and abandoning module StreamingPauseRendering (344)
+[2017.06.18-16.21.25:589][285]LogModuleManager: Shutting down and abandoning module AnalyticsET (342)
+[2017.06.18-16.21.25:589][285]LogModuleManager: Shutting down and abandoning module PortalServices (340)
+[2017.06.18-16.21.25:589][285]LogModuleManager: Shutting down and abandoning module PortalRpc (338)
+[2017.06.18-16.21.25:589][285]LogModuleManager: Shutting down and abandoning module MessagingRpc (336)
+[2017.06.18-16.21.25:589][285]LogModuleManager: Shutting down and abandoning module AIModule (334)
+[2017.06.18-16.21.25:589][285]LogModuleManager: Shutting down and abandoning module GameplayDebugger (333)
+[2017.06.18-16.21.25:589][285]LogModuleManager: Shutting down and abandoning module AITestSuite (331)
+[2017.06.18-16.21.25:589][285]LogModuleManager: Shutting down and abandoning module ProfilerService (328)
+[2017.06.18-16.21.25:813][285]LogModuleManager: Shutting down and abandoning module TaskGraph (326)
+[2017.06.18-16.21.25:813][285]LogModuleManager: Shutting down and abandoning module SteamVRController (324)
+[2017.06.18-16.21.25:813][285]LogModuleManager: Shutting down and abandoning module SteamVR (322)
+[2017.06.18-16.21.25:813][285]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponentEditor (320)
+[2017.06.18-16.21.25:813][285]LogModuleManager: Shutting down and abandoning module ProceduralMeshComponent (318)
+[2017.06.18-16.21.25:813][285]LogModuleManager: Shutting down and abandoning module OculusLibrary (316)
+[2017.06.18-16.21.25:813][285]LogModuleManager: Shutting down and abandoning module OculusInput (314)
+[2017.06.18-16.21.25:813][285]LogModuleManager: Shutting down and abandoning module MobilePatchingUtils (312)
+[2017.06.18-16.21.25:813][285]LogModuleManager: Shutting down and abandoning module CustomMeshComponent (310)
+[2017.06.18-16.21.25:813][285]LogModuleManager: Shutting down and abandoning module CableComponent (308)
+[2017.06.18-16.21.25:813][285]LogModuleManager: Shutting down and abandoning module ArchVisCharacter (306)
+[2017.06.18-16.21.25:813][285]LogModuleManager: Shutting down and abandoning module AndroidPermission (304)
+[2017.06.18-16.21.25:813][285]LogModuleManager: Shutting down and abandoning module MediaPlayerEditor (300)
+[2017.06.18-16.21.25:813][285]LogModuleManager: Shutting down and abandoning module HTML5Networking (298)
+[2017.06.18-16.21.25:813][285]LogModuleManager: Shutting down and abandoning module AlembicImporter (296)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module AlembicLibrary (295)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module GeometryCache (294)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module GeometryCacheEd (293)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module SuperSearchEditor (288)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module SuperSearch (287)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module SpeedTreeImporter (284)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module PluginBrowser (282)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module MobileLauncherProfileWizard (280)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module VisualStudioSourceCodeAccess (278)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module DesktopPlatform (277)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module UObjectPlugin (274)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module SubversionSourceControl (272)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module PerforceSourceControl (270)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module GitSourceControl (268)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module SourceControl (267)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeEditor (264)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module PaperTiledImporter (262)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module PaperSpriteSheetImporter (260)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module Paper2DEditor (258)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module MeshPaint (257)
+[2017.06.18-16.21.25:814][285]LogModuleManager: Shutting down and abandoning module LevelEditor (255)
+[2017.06.18-16.21.25:816][285]LogModuleManager: Shutting down and abandoning module PixelInspectorModule (254)
+[2017.06.18-16.21.25:817][285]LogModuleManager: Shutting down and abandoning module MainFrame (252)
+[2017.06.18-16.21.25:817][285]LogModuleManager: Shutting down and abandoning module HotReload (251)
+[2017.06.18-16.21.25:818][285]LogModuleManager: Shutting down and abandoning module PhysXVehiclesEditor (246)
+[2017.06.18-16.21.25:818][285]LogModuleManager: Shutting down and abandoning module PhysXVehicles (244)
+[2017.06.18-16.21.25:818][285]LogModuleManager: Shutting down and abandoning module LocationServicesBPLibrary (242)
+[2017.06.18-16.21.25:818][285]LogModuleManager: Shutting down and abandoning module ImmediatePhysicsEditor (240)
+[2017.06.18-16.21.25:818][285]LogModuleManager: Shutting down and abandoning module ImmediatePhysics (238)
+[2017.06.18-16.21.25:818][285]LogModuleManager: Shutting down and abandoning module UdpMessaging (236)
+[2017.06.18-16.21.25:919][285]LogModuleManager: Shutting down and abandoning module TcpMessaging (234)
+[2017.06.18-16.21.26:019][285]LogModuleManager: Shutting down and abandoning module GameplayTagsEditor (232)
+[2017.06.18-16.21.26:019][285]LogModuleManager: Shutting down and abandoning module FacialAnimationEditor (230)
+[2017.06.18-16.21.26:019][285]LogModuleManager: Shutting down and abandoning module FacialAnimation (228)
+[2017.06.18-16.21.26:019][285]LogModuleManager: Shutting down and abandoning module AssetManagerEditor (226)
+[2017.06.18-16.21.26:019][285]LogModuleManager: Shutting down and abandoning module GraphEditor (225)
+[2017.06.18-16.21.26:019][285]LogModuleManager: Shutting down and abandoning module ContentBrowser (223)
+[2017.06.18-16.21.26:022][285]LogModuleManager: Shutting down and abandoning module LightPropagationVolumeRuntime (220)
+[2017.06.18-16.21.26:022][285]LogModuleManager: Shutting down and abandoning module Paper2D (218)
+[2017.06.18-16.21.26:022][285]LogModuleManager: Shutting down and abandoning module WindowsMoviePlayer (216)
+[2017.06.18-16.21.26:022][285]LogModuleManager: Shutting down and abandoning module WmfMedia (214)
+[2017.06.18-16.21.26:023][285]LogModuleManager: Shutting down and abandoning module ClothingSystemEditor (212)
+[2017.06.18-16.21.26:023][285]LogModuleManager: Shutting down and abandoning module ClothingSystemRuntime (210)
+[2017.06.18-16.21.26:023][285]LogModuleManager: Shutting down and abandoning module MediaAssets (208)
+[2017.06.18-16.21.26:023][285]LogModuleManager: Shutting down and abandoning module GameLiveStreaming (206)
+[2017.06.18-16.21.26:023][285]LogModuleManager: Shutting down and abandoning module VREditor (204)
+[2017.06.18-16.21.26:023][285]LogModuleManager: Shutting down and abandoning module StringTableEditor (202)
+[2017.06.18-16.21.26:023][285]LogModuleManager: Shutting down and abandoning module GameplayTasksEditor (200)
+[2017.06.18-16.21.26:023][285]LogModuleManager: Shutting down and abandoning module BehaviorTreeEditor (198)
+[2017.06.18-16.21.26:023][285]LogModuleManager: Shutting down and abandoning module FunctionalTesting (196)
+[2017.06.18-16.21.26:023][285]LogModuleManager: Shutting down and abandoning module CollisionAnalyzer (194)
+[2017.06.18-16.21.26:023][285]LogModuleManager: Shutting down and abandoning module UMG (192)
+[2017.06.18-16.21.26:023][285]LogModuleManager: Shutting down and abandoning module UMGEditor (191)
+[2017.06.18-16.21.26:024][285]LogModuleManager: Shutting down and abandoning module Sequencer (190)
+[2017.06.18-16.21.26:024][285]LogModuleManager: Shutting down and abandoning module AssetTools (188)
+[2017.06.18-16.21.26:024][285]LogModuleManager: Shutting down and abandoning module MessageLog (187)
+[2017.06.18-16.21.26:024][285]LogModuleManager: Shutting down and abandoning module WorkspaceMenuStructure (186)
+[2017.06.18-16.21.26:024][285]LogModuleManager: Shutting down and abandoning module SlateReflector (180)
+[2017.06.18-16.21.26:024][285]LogModuleManager: Shutting down and abandoning module Slate (178)
+[2017.06.18-16.21.26:024][285]LogModuleManager: Shutting down and abandoning module EditorStyle (176)
+[2017.06.18-16.21.26:030][285]LogModuleManager: Shutting down and abandoning module SourceCodeAccess (174)
+[2017.06.18-16.21.26:030][285]LogModuleManager: Shutting down and abandoning module HeadMountedDisplay (172)
+[2017.06.18-16.21.26:030][285]LogModuleManager: Shutting down and abandoning module XAudio2 (170)
+[2017.06.18-16.21.26:030][285]LogModuleManager: Shutting down and abandoning module Networking (168)
+[2017.06.18-16.21.26:030][285]LogModuleManager: Shutting down and abandoning module Core (164)
+[2017.06.18-16.21.26:030][285]LogModuleManager: Shutting down and abandoning module AssetRegistry (162)
+[2017.06.18-16.21.26:221][285]LogDirectoryWatcher: A directory notification for '../../../Engine/Content/' was aborted.
+[2017.06.18-16.21.26:221][285]LogDirectoryWatcher: A directory notification for '../../../../../UEProjects/Marduk_0/Content/' was aborted.
+[2017.06.18-16.21.26:221][285]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/2D/Paper2D/Content/' was aborted.
+[2017.06.18-16.21.26:221][285]LogDirectoryWatcher: A directory notification for '../../../Engine/Plugins/Runtime/GearVR/Content/' was aborted.
+[2017.06.18-16.21.26:228][285]LogModuleManager: Shutting down and abandoning module DirectoryWatcher (161)
+[2017.06.18-16.21.26:230][285]LogModuleManager: Shutting down and abandoning module KismetCompiler (158)
+[2017.06.18-16.21.26:230][285]LogModuleManager: Shutting down and abandoning module LevelSequence (156)
+[2017.06.18-16.21.26:230][285]LogModuleManager: Shutting down and abandoning module PhysXFormats (154)
+[2017.06.18-16.21.26:230][285]LogModuleManager: Shutting down and abandoning module MeshUtilities (152)
+[2017.06.18-16.21.26:230][285]LogModuleManager: Shutting down and abandoning module SimplygonSwarm (151)
+[2017.06.18-16.21.26:230][285]LogModuleManager: Shutting down and abandoning module SimplygonMeshReduction (149)
+[2017.06.18-16.21.26:230][285]LogModuleManager: Shutting down and abandoning module QuadricMeshReduction (147)
+[2017.06.18-16.21.26:230][285]LogModuleManager: Shutting down and abandoning module DerivedDataCache (144)
+[2017.06.18-16.21.26:236][285]LogDerivedDataCache: Shutdown
+[2017.06.18-16.21.26:236][285]LogModuleManager: Shutting down and abandoning module TargetPlatform (142)
+[2017.06.18-16.21.26:236][285]LogModuleManager: Shutting down and abandoning module VulkanShaderFormat (141)
+[2017.06.18-16.21.26:236][285]LogModuleManager: Shutting down and abandoning module ShaderFormatVectorVM (139)
+[2017.06.18-16.21.26:236][285]LogModuleManager: Shutting down and abandoning module ShaderFormatOpenGL (137)
+[2017.06.18-16.21.26:236][285]LogModuleManager: Shutting down and abandoning module ShaderFormatD3D (135)
+[2017.06.18-16.21.26:236][285]LogModuleManager: Shutting down and abandoning module MetalShaderFormat (133)
+[2017.06.18-16.21.26:236][285]LogModuleManager: Shutting down and abandoning module TextureFormatUncompressed (131)
+[2017.06.18-16.21.26:236][285]LogModuleManager: Shutting down and abandoning module TextureFormatPVR (129)
+[2017.06.18-16.21.26:236][285]LogModuleManager: Shutting down and abandoning module TextureFormatDXT (127)
+[2017.06.18-16.21.26:236][285]LogModuleManager: Shutting down and abandoning module TextureFormatIntelISPCTexComp (125)
+[2017.06.18-16.21.26:236][285]LogModuleManager: Shutting down and abandoning module TextureFormatASTC (123)
+[2017.06.18-16.21.26:236][285]LogModuleManager: Shutting down and abandoning module ImageWrapper (122)
+[2017.06.18-16.21.26:236][285]LogModuleManager: Shutting down and abandoning module TextureFormatAndroid (119)
+[2017.06.18-16.21.26:236][285]LogModuleManager: Shutting down and abandoning module AudioFormatOpus (117)
+[2017.06.18-16.21.26:236][285]LogModuleManager: Shutting down and abandoning module AudioFormatOgg (115)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module AudioFormatADPCM (113)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module LinuxTargetPlatform (111)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module LinuxServerTargetPlatform (109)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module LinuxNoEditorTargetPlatform (107)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module LinuxClientTargetPlatform (105)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module TVOSTargetPlatform (103)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module Messaging (101)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module IOSTargetPlatform (99)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module HTML5TargetPlatform (97)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module Android_PVRTCTargetPlatform (95)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module Android_MultiTargetPlatform (93)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module Android_ETC2TargetPlatform (91)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module Android_ETC1TargetPlatform (89)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module Android_DXTTargetPlatform (87)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module Android_ATCTargetPlatform (85)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module Android_ASTCTargetPlatform (83)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module AndroidTargetPlatform (81)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module WindowsTargetPlatform (79)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module WindowsServerTargetPlatform (77)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module WindowsNoEditorTargetPlatform (75)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module WindowsClientTargetPlatform (73)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module MacTargetPlatform (71)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module MacServerTargetPlatform (69)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module MacNoEditorTargetPlatform (67)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module MacClientTargetPlatform (65)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module AllDesktopTargetPlatform (63)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module InputCore (60)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module Settings (58)
+[2017.06.18-16.21.26:237][285]LogModuleManager: Shutting down and abandoning module OculusRift (56)
+[2017.06.18-16.21.26:238][285]LogModuleManager: Shutting down and abandoning module GearVRController (54)
+[2017.06.18-16.21.26:238][285]LogModuleManager: Shutting down and abandoning module GearVR (52)
+[2017.06.18-16.21.26:238][285]LogModuleManager: Shutting down and abandoning module ExampleDeviceProfileSelector (50)
+[2017.06.18-16.21.26:238][285]LogModuleManager: Shutting down and abandoning module OnlineBlueprintSupport (48)
+[2017.06.18-16.21.26:238][285]LogModuleManager: Shutting down and abandoning module OnlineSubsystem (44)
+[2017.06.18-16.21.26:238][285]LogOnline:Display: Unloading online subsystem: NULL
+[2017.06.18-16.21.26:238][285]LogModuleManager: Shutting down and abandoning module XMPP (43)
+[2017.06.18-16.21.26:238][285]LogModuleManager: Shutting down and abandoning module HTTP (41)
+[2017.06.18-16.21.26:238][285]LogHttp:Display: Http module shutting down, but needs to wait on 1 outstanding Http requests:
+[2017.06.18-16.21.26:238][285]LogHttp:Display: 	verb=[POST] url=[https://datarouter.ol.epicgames.com/datarouter/api/v1/public/data?SessionID=%7B0211B5C7-438C-880C-6EEF-28BF8B47F80E%7D&AppID=UEEditor.Rocket.Release&AppVersion=4.16.1-3466753%2B%2B%2BUE4%2BRelease-4.16&UserID=765fdb2f42f444858c3c41833f0e8d78%7C4df76d08e4504b40b9086455e778edab%7Ccb348cc2-5fe0-4056-81a0-26364bc0fc09&AppEnvironment=datacollector-binary&UploadType=eteventstream] status=Processing
+[2017.06.18-16.21.26:270][285]LogModuleManager: Shutting down and abandoning module SSL (40)
+[2017.06.18-16.21.26:274][285]LogModuleManager: Shutting down and abandoning module HTTPChunkInstaller (36)
+[2017.06.18-16.21.26:274][285]LogModuleManager: Shutting down and abandoning module AnimationModifiers (34)
+[2017.06.18-16.21.26:274][285]LogModuleManager: Shutting down and abandoning module PropertyEditor (33)
+[2017.06.18-16.21.26:274][285]LogModuleManager: Shutting down and abandoning module AudioEditor (30)
+[2017.06.18-16.21.26:274][285]LogModuleManager: Shutting down and abandoning module TextureCompressor (28)
+[2017.06.18-16.21.26:275][285]LogModuleManager: Shutting down and abandoning module ShaderCore (26)
+[2017.06.18-16.21.26:275][285]LogModuleManager: Shutting down and abandoning module Landscape (24)
+[2017.06.18-16.21.26:275][285]LogModuleManager: Shutting down and abandoning module SlateRHIRenderer (22)
+[2017.06.18-16.21.26:279][285]LogModuleManager: Shutting down and abandoning module OpenGLDrv (20)
+[2017.06.18-16.21.26:279][285]LogModuleManager: Shutting down and abandoning module D3D11RHI (18)
+[2017.06.18-16.21.26:279][285]LogModuleManager: Shutting down and abandoning module AnimGraphRuntime (16)
+[2017.06.18-16.21.26:279][285]LogModuleManager: Shutting down and abandoning module Renderer (14)
+[2017.06.18-16.21.26:279][285]LogModuleManager: Shutting down and abandoning module Engine (12)
+[2017.06.18-16.21.26:279][285]LogModuleManager: Shutting down and abandoning module CoreUObject (10)
+[2017.06.18-16.21.26:279][285]LogModuleManager: Shutting down and abandoning module NetworkFile (8)
+[2017.06.18-16.21.26:279][285]LogModuleManager: Shutting down and abandoning module StreamingFile (6)
+[2017.06.18-16.21.26:279][285]LogModuleManager: Shutting down and abandoning module SandboxFile (4)
+[2017.06.18-16.21.26:279][285]LogModuleManager: Shutting down and abandoning module PakFile (2)
+[2017.06.18-16.21.26:282][285]LogExit: Exiting.
+[2017.06.18-16.21.26:322][285]Log file closed, 06/18/17 19:21:26
